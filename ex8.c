@@ -21,7 +21,7 @@
  /* Template para programa basico Allegro
   * que salva uma imagem em arquivo
   * Para compilar use:
-  * $gcc ex7.c -o ex7.x -Wall `allegro-config --cflags --libs`
+  * $gcc ex8.c -o ex8.x -Wall `allegro-config --cflags --libs`
   */
   
   
@@ -35,7 +35,7 @@
 #define CORAMARELO (makecol(255,255,100))
 #define CORVERMELHO (makecol(255, 0, 0))
   
-#define IMAGENAME "ex7.bmp" /* nome do arquivo de imagem */
+#define IMAGENAME "ex88888888* nome do arquivo de imagem */
 #include <stdio.h>
 #include <allegro.h>
   
