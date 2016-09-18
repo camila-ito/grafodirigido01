@@ -60,6 +60,8 @@
       /*comeco do codigo*/
       printf("digite o valor do x circulo1\n");
       scanf("%lf",&x_circulo1);
+      
+      distancia=sqrt(pow(x_circulo2 - x_circulo1,2)+pow(y_circulo2 - y_circulo1,2)); 
 
       printf("Considerando que o primeiro circulo e a origem do indicador, qual a coordenada em que deseja o eixo x do primeiro circulo?(max 640)");
       scanf("%d", &x1);
