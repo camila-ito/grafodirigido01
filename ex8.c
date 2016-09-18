@@ -79,8 +79,9 @@
           scanf("%d", &x1);
       }    
       ang= acos((y_circulo2 - y_circulo1)/(x_circulo2 - x_circulo1));/*angulo total de abertura*/
-
       printf("ang %f\n",ang);
+      grau = ang*180/3.14; 
+      printf("grau %f\n",grau);
       
       /*fim do codigo*/
       save_bitmap(IMAGENAME, buff, pal);
