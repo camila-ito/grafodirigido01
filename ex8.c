@@ -94,6 +94,8 @@
       raio = sqrt(pow(x1 - x_circulo1,2) + pow(y1 - y_circulo1,2));
       putpixel(buff,x1,y1,CORVERDE);
 
+      arc(buff,x1,y1,itofix(tang),itofix(tang+60), raio ,CORAMARELO);
+
       /*printf("Considerando que o primeiro circulo e a origem do indicador, qual a coordenada em que deseja o eixo x do primeiro circulo?(max 640)");
       scanf("%d", &x1);
       while(x1<0||x1>640)
