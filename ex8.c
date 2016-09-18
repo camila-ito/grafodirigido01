@@ -46,7 +46,7 @@
       double x_circulo1, y_circulo1;
       double x_circulo2, y_circulo2;
       float y1, distancia=0, x1, tang;
-
+      double ang, cosse, raio, sen, cosse2, cossef, grau;
          
       if(install_allegro(SYSTEM_NONE, &errno, atexit)!=0)
           exit(EXIT_FAILURE);
