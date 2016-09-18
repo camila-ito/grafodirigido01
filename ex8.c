@@ -87,7 +87,7 @@
       sen = sin(grau - 60);
       cosse = cos(grau-60);
       y1 = y_circulo1 + sen*distancia; /*descubro a altura do centro */
-      x1=x_circulo1 + cosse *distancia;
+      x1=x_circulo1 + cosse *distancia; /*o valor em x do cento*/
 
       /*printf("Considerando que o primeiro circulo e a origem do indicador, qual a coordenada em que deseja o eixo x do primeiro circulo?(max 640)");
       scanf("%d", &x1);
