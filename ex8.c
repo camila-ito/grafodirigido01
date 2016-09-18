@@ -59,6 +59,7 @@
       }
       /*comeco do codigo*/
       printf("Considerando que o primeiro circulo e a origem do indicador, qual a coordenada em que deseja o eixo x do primeiro circulo?(max 640)");
+      scanf("%d", &x1);
       /*fim do codigo*/
       save_bitmap(IMAGENAME, buff, pal);
       destroy_bitmap(buff);
