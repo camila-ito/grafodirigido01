@@ -21,7 +21,7 @@
  /* Template para programa basico Allegro
   * que salva uma imagem em arquivo
   * Para compilar use:
-  * $gcc ex7.c -o ex7.x -Wall `allegro-config --cflags --libs`
+  * $gcc ex8.c -o ex8.x -Wall `allegro-config --cflags --libs`
   */
   
   
@@ -35,7 +35,7 @@
 #define CORAMARELO (makecol(255,255,100))
 #define CORVERMELHO (makecol(255, 0, 0))
   
-#define IMAGENAME "ex7.bmp" /* nome do arquivo de imagem */
+#define IMAGENAME "ex8.bmp" /* nome do arquivo de imagem*/ 
 #include <stdio.h>
 #include <allegro.h>
   
@@ -58,7 +58,12 @@
           exit(EXIT_FAILURE);
       }
       /*comeco do codigo*/
-
+      printf("Considerando que o primeiro circulo e a origem do indicador, qual a coordenada em que deseja o eixo x do primeiro circulo?(max 640)");
+      scanf("%d", &x1);
+      while(x1<0||x1>640)
+      {
+          scanf("%d", &x1);
+      }    
       /*fim do codigo*/
       save_bitmap(IMAGENAME, buff, pal);
       destroy_bitmap(buff);
