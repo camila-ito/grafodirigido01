@@ -26,6 +26,7 @@ DEFSYM = $(subst .,_,$(BUILD))
 VERSION = "\"$(MAJOR).$(MINOR).$(BUILD)\""
 CC = gcc
 CFLAGS = -Wall -g -O0 -std=gnu99
+CFLAGS = -Wall `allegro-config --cflags --libs`
 #-ansi -pedantic-errors -c -Ofast -Wextra 
 CPPFLAGS = -DVERSION=$(VERSION) -DBUILD="\"$(BUILD)\""
 LDLIBS = -Wl,--defsym,BUILD_$(DEFSYM)=0 -lm -lgmp `allegro-config --cflags --libs`
