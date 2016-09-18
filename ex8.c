@@ -41,7 +41,6 @@
   
  int main(void)
 {
-      BITMAP *buff;
       PALETTE pal;
       double x_circulo1, y_circulo1;
       double x_circulo2, y_circulo2;
@@ -55,7 +54,7 @@
       get_palette(pal);
                
       /*Create a buffer for smooth animation.*/
-      buff = create_bitmap(320,240);
+      BITMAP *buff = create_bitmap(320,240);
       if(buff == NULL)
       {
           printf("Could not create buffer!\n");
