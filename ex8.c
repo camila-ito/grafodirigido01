@@ -35,7 +35,7 @@
 #define CORAMARELO (makecol(255,255,100))
 #define CORVERMELHO (makecol(255, 0, 0))
   
-#define IMAGENAME "ex88888888* nome do arquivo de imagem */
+#define IMAGENAME "ex8.bmp" /* nome do arquivo de imagem*/ 
 #include <stdio.h>
 #include <allegro.h>
   
@@ -58,7 +58,7 @@
           exit(EXIT_FAILURE);
       }
       /*comeco do codigo*/
-
+      printf("Considerando que o primeiro circulo e a origem do indicador, qual a coordenada em que deseja o eixo x do primeiro circulo?(max 640)");
       /*fim do codigo*/
       save_bitmap(IMAGENAME, buff, pal);
       destroy_bitmap(buff);
