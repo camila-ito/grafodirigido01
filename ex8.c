@@ -73,15 +73,16 @@ int main(void)
     scanf("%lf",&y_circulo2);
     
     distancia = sqrt(pow(x_circulo2 - x_circulo1,2)+pow(y_circulo2 - y_circulo1,2)); 
-    /*distacia entre os dois centros*/ 
+    /*distacia entre os dois centros*/
 
     printf("Considerando que o primeiro circulo e a origem do indicador, qual a coordenada em que deseja o eixo x do primeiro circulo?(max 640)");
     scanf("%d", &x1);
     while(x1<0||x1>640)
-    {
         scanf("%d", &x1);
-    }    
-    ang= acos((y_circulo2 - y_circulo1)/(x_circulo2 - x_circulo1));/*angulo total de abertura*/
+        
+    ang= acos((y_circulo2 - y_circulo1)/(x_circulo2 - x_circulo1));
+    /*angulo total de abertura*/
+    
     printf("ang %f\n",ang);
     grau = ang*180/3.14; 
     printf("grau %f\n",grau);
