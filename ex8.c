@@ -86,7 +86,7 @@
       printf("grau %f\n",grau);
       sen = sin(grau - 60);
       cosse = cos(grau-60);
-
+      y1 = y_circulo1 + sen*distancia;
 
       /*printf("Considerando que o primeiro circulo e a origem do indicador, qual a coordenada em que deseja o eixo x do primeiro circulo?(max 640)");
       scanf("%d", &x1);
