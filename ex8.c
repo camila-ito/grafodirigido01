@@ -72,7 +72,7 @@
       printf("digite o valor do y do circulo2\n");
       scanf("%lf", &y_circulo2)
       
-          distancia = sqrt(pow(x_circulo2 - x_circulo1,2)+pow(y_circulo2 - y_circulo1,2)); 
+      distancia = sqrt(pow(x_circulo2 - x_circulo1,2)+pow(y_circulo2 - y_circulo1,2)); 
       
       /*distacia entre os dois centros*/ 
       printf("distancia %f\n ",distancia);
@@ -80,6 +80,8 @@
       printf("diferenca y %f \n",y_circulo2 - y_circulo1);
      
       ang= acos((y_circulo2 - y_circulo1)/(x_circulo2 - x_circulo1));/*angulo total de abertura*/
+
+      printf("ang %f\n",ang);
 
       printf("Considerando que o primeiro circulo e a origem do indicador, qual a coordenada em que deseja o eixo x do primeiro circulo?(max 640)");
       scanf("%d", &x1);
