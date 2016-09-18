@@ -95,6 +95,9 @@
       putpixel(buff,x1,y1,CORVERDE);
 
       arc(buff,x1,y1,itofix(tang),itofix(tang+60), raio ,CORAMARELO);
+      circlefill(buff, x_circulo1, y_circulo1,20, CORAZUL);
+      circlefill(buff, x_circulo2, y_circulo2, 20, CORAZUL);
+
 
       /*printf("Considerando que o primeiro circulo e a origem do indicador, qual a coordenada em que deseja o eixo x do primeiro circulo?(max 640)");
       scanf("%d", &x1);
