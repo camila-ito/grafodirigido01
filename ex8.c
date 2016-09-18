@@ -58,6 +58,9 @@
           exit(EXIT_FAILURE);
       }
       /*comeco do codigo*/
+      printf("digite o valor do x circulo1\n");
+      scanf("%lf",&x_circulo1);
+
       printf("Considerando que o primeiro circulo e a origem do indicador, qual a coordenada em que deseja o eixo x do primeiro circulo?(max 640)");
       scanf("%d", &x1);
       while(x1<0||x1>640)
