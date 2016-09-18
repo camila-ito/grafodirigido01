@@ -78,6 +78,9 @@
       {
           scanf("%d", &x1);
       }    
+      ang= acos((y_circulo2 - y_circulo1)/(x_circulo2 - x_circulo1));/*angulo total de abertura*/
+
+      printf("ang %f\n",ang);
       
       /*fim do codigo*/
       save_bitmap(IMAGENAME, buff, pal);
