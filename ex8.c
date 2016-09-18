@@ -67,7 +67,7 @@
       scanf("%lf",&x_circulo1);
       printf("digite o valor y do circulo1\n");
       scanf("%lf",&y_circulo1);
-
+      printf("digite o valor do x do circulo2\n");
 
       distancia = sqrt(pow(x_circulo2 - x_circulo1,2)+pow(y_circulo2 - y_circulo1,2)); 
       /*distacia entre os dois centros*/ 
