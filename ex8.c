@@ -92,6 +92,7 @@
       tang = atan((y_circulo2-y_circulo1)/(x_circulo2-x_circulo1));
 
       raio = sqrt(pow(x1 - x_circulo1,2) + pow(y1 - y_circulo1,2));
+      putpixel(buff,x1,y1,CORVERDE);
 
       /*printf("Considerando que o primeiro circulo e a origem do indicador, qual a coordenada em que deseja o eixo x do primeiro circulo?(max 640)");
       scanf("%d", &x1);
