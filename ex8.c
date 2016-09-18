@@ -82,6 +82,11 @@ int main(void)
     printf("ang %f\n",ang);
     grau = ang*180/3.14; 
     printf("grau %f\n",grau);
+    sen = sin(grau - 60);
+    cosse = cos(grau-60);
+
+    y1=y_circulo1 + sen*distancia;/*descubro a altura do centro */
+    x1=x_circulo1 + cosse *distancia;/*o valor em x do cento*/
 
     /*fim do codigo*/
     save_bitmap(IMAGENAME, buff, pal);
