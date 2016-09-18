@@ -82,6 +82,8 @@
       ang= acos((y_circulo2 - y_circulo1)/(x_circulo2 - x_circulo1));/*angulo total de abertura*/
 
       printf("ang %f\n",ang);
+      grau = ang*180/3.14; 
+      printf("grau %f\n",grau);
 
       printf("Considerando que o primeiro circulo e a origem do indicador, qual a coordenada em que deseja o eixo x do primeiro circulo?(max 640)");
       scanf("%d", &x1);
