@@ -47,7 +47,6 @@
       double x_circulo2, y_circulo2;
       float y1, distancia=0, x1, tang;
       double ang, cosse, raio, sen, grau;
-      FILE  *entrada;
       if(install_allegro(SYSTEM_NONE, &errno, atexit)!=0)
           exit(EXIT_FAILURE);
            
@@ -62,7 +61,6 @@
           exit(EXIT_FAILURE);
       }
       /*comeco do codigo*/
-      entrada = fopen(entrada,"r");
      
 
       
