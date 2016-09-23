@@ -38,15 +38,16 @@
 #define IMAGENAME "ex8.bmp" /* nome do arquivo de imagem*/ 
 #include <stdio.h>
 #include <allegro.h>
-  
+#include <math.h> 
+
  int main(void)
 {
       PALETTE pal;
       double x_circulo1, y_circulo1;
       double x_circulo2, y_circulo2;
       float y1, distancia=0, x1, tang;
-      double ang, cosse, raio, sen, cosse2, cossef, grau;
-         
+      double ang, cosse, raio, sen, grau;
+      FILE  *entrada;
       if(install_allegro(SYSTEM_NONE, &errno, atexit)!=0)
           exit(EXIT_FAILURE);
            
@@ -61,15 +62,19 @@
           exit(EXIT_FAILURE);
       }
       /*comeco do codigo*/
+      entrada = fopen(entrada,"r");
+     
+
+      
       
       printf("digite o valor do x circulo1\n");
       scanf("%lf",&x_circulo1);
       printf("digite o valor y do circulo1\n");
       scanf("%lf",&y_circulo1);
       printf("digite o valor do x do circulo2\n");
-      scanf("%lf",&x_circulo2_);
+      scanf("%lf",&x_circulo2);
       printf("digite o valor do y do circulo2\n");
-      scanf("%lf", &y_circulo2)
+      scanf("%lf", &y_circulo2);
       
       distancia = sqrt(pow(x_circulo2 - x_circulo1,2)+pow(y_circulo2 - y_circulo1,2)); 
       
