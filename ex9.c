@@ -115,6 +115,9 @@ int main(void)
             }
         }    
     
+    for(k = 0;k < i ; k++ )
+        seta(buff, ent[k][0], ent[k][1], saida[k][0], saida[k][1]);
+         
     putpixel(buff,x1,y1,CORVERDE); 
 
     arc(buff,x1,y1,itofix(tang),itofix(tang+60), raio ,CORAMARELO);
