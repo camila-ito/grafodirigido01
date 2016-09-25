@@ -116,6 +116,14 @@ int entrada(char letra[][2])
     while(fscanf(arquivo, "%c %c\n", &letra[i][0], &letra[i][1]) != EOF) 
         i++;
 
+    printf("letra:\n");
+
+    for(k=0; k<i; k++)
+    {
+        printf("%c",letra[k][0]);
+        printf("%c\n",letra[k][1]);
+    }
+
     fclose(arquivo);
 
     return i;
