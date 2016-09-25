@@ -42,6 +42,7 @@
 int main(void)
 {
     PALETTE pal;
+    int v[8];
     double x_circulo1, y_circulo1;
     double x_circulo2, y_circulo2;
     float y1, distancia=0, x1, tang;
@@ -97,6 +98,13 @@ int main(void)
     circlefill(buff, x_circulo1, y_circulo1,20, CORAZUL);
     circlefill(buff, x_circulo2, y_circulo2, 20, CORAZUL);
 
+    v[0]=x_circ1;
+    v[1]=y_circ1;
+    v[6]=x_circ2;
+    v[7]=y_circ2;
+    v[4]=v[2]=xa - yd*0.35;
+    v[5]=v[3]=y - xd*0.35;
+    spline(buff, v, CORVERDE); 
 
     /*printf("Considerando que o primeiro circulo e a origem do indicador, qual a coordenada em que deseja o eixo x do primeiro circulo?(max 640)");
       scanf("%d", &x1);
