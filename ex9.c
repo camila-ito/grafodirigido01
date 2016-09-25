@@ -97,7 +97,8 @@ int main(void)
         posicoes[k][0] = graf[k];
         posicoes[k][1] = posx;
         posicoes[k][2] = posy;
-
+        printf("posicoes %d\n", posicoes[k][1]);
+        textprintf_ex(buff, font, posx, posy, CORVERDE, CORPRETO, "%c", graf[k]);
 
 
 
