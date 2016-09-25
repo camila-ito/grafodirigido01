@@ -34,10 +34,12 @@
 #define CORVERDE (makecol(0, 255, 0))
 #define CORAMARELO (makecol(255,255,100))
 #define CORVERMELHO (makecol(255, 0, 0))
+#define MODULO(x) ((x)>=0?(x):(-1*(x)))
 
 #define IMAGENAME "ex8.bmp" /* nome do arquivo de imagem*/ 
 #include <stdio.h>
 #include <allegro.h>
+#include <math.h>
 
 int main(void)
 {
