@@ -104,33 +104,48 @@ int main(void)
     }   
     v[4] = v[2] = xa - yd*0.35;
     v[5] = v[3] = y - xd*o.35;
-   
-  /*  if(v[5]<v[7])
-    {*/     
-  /*  d=sqrt(pow(v[6]-x_circ2,2)+pow(v[7]-y_circ2,2));
-    d/=2;
-    if(v[0]<v[6]||(v[0]>v[6]&&v[1]<v[7]))
-    {
+
+    /*  if(v[5]<v[7])
+        {*/     
+    /*  d=sqrt(pow(v[6]-x_circ2,2)+pow(v[7]-y_circ2,2));
+        d/=2;
+        if(v[0]<v[6]||(v[0]>v[6]&&v[1]<v[7]))
+        {
         xm=x_circ2-(cos(45))*d;
         ym=y_circ2-(sin(45))*d);
         v[6]=xm-r/4.3;
         v[7]=ym-r/4.3;
-    }
-    else
-    {
+        }
+        else
+        {
         xm=x_circ2+(cos(45)*d);
         ym=y_circ2+(sin(45)*d);
         v[6]=xm+r/4.3;
         v[7]=ym+r/4.3;
-    }*/
+        }*/
     A=sqrt(pow(v[6]-v[4],2)+pow(v[7]-v[5],2));
-    
+
     sent=(v[7]-v[5])/A;
     cost=(v[6]-v[4])/A;
 
     x1=v[6];
     y1=v[7];
-    
+
+    /* if(v[5]<v[7])
+     *     {*/
+    x2=v[6] -10*cost +4*sent;
+    y2=v[7] -10*sent -4*cost;
+    x3=v[6] -10*cost -4*sent;
+    y3=v[7] -10*sent +4*cost;
+    /*  }
+     else
+     {
+         x2=v[6] -5*cost +4*sent;
+         y2=v[7] -5*sent -4*cost;
+         x3=v[6] -5*cost -4*sent;
+         y3=v[7] -5*sent +4*cost;
+     }*/
+
     spline(buff, v, CORVERDE); 
 
     /*printf("Considerando que o primeiro circulo e a origem do indicador, qual a coordenada em que deseja o eixo x do primeiro circulo?(max 640)");
