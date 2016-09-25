@@ -84,6 +84,7 @@ int main(void)
     cosseno1 = (xmedio - x_circ1)/distancia1;
 
     circle(buff, x_circ1, y_circ1, 20, CORVERDE);
+    circle(buff, x_circ2, y_circ2, 20, CORAMARELO);
 
     /*distacia entre os dois centros*/ 
     printf("distancia %f\n ",distancia);
