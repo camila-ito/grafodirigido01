@@ -116,6 +116,13 @@ int main(void)
         v[6]=xm-r/4.3;
         v[7]=ym-r/4.3;
     }
+    else
+    {
+        xm=x_circ2+(cos(45)*d);
+        ym=y_circ2+(sin(45)*d);
+        v[6]=xm+r/4.3;
+        v[7]=ym+r/4.3;
+    }*/
     
     
     spline(buff, v, CORVERDE); 
