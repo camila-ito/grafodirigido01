@@ -99,4 +99,8 @@ int quant_graf(char letra[][2], char *graf, int i)
 {
     int k, j, m, l; /*variaveis de controle*/
     
+    for(k = 0; k < 20; k++)
+        graf[k] = 0;
+    j = 0;
+    l = 0;
 }
