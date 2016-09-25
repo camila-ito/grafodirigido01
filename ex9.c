@@ -100,7 +100,6 @@ int main(void)
         posicoes[k][0] = graf[k];
         posicoes[k][1] = posx;
         posicoes[k][2] = posy;
-        printf("posicoes %d\n", posicoes[k][1]);
         textprintf_ex(buff, font, posx, posy, CORVERDE, CORPRETO, "%c", graf[k]);
     }
     
@@ -159,7 +158,7 @@ int entrada(char letra[][2])
     while(fscanf(arquivo, "%c %c\n", &letra[i][0], &letra[i][1]) != EOF) 
         i++;
 
-    printf("letra:\n");
+    printf("Transicoes::\n");
     for(k=0; k<i; k++)
     {
         printf("%c",letra[k][0]);
@@ -230,7 +229,7 @@ int seta(BITMAP *buff, float x_circ1, float y_circ1, float x_circ2, float y_circ
     seno1 = (ymedio - y_circ1)/distancia1; /*calculo do seno do primeiro ponto*/ 
     cosseno1 = (xmedio -  x_circ1)/distancia1; /*calculo do cosseno do primeiro ponto*/
 
-    circle(buff, x_circ1, y_circ1,20, CORVERDE);
+    circle(buff, x_circ1, y_circ1, 20, CORAMARELO);
     circle(buff, x_circ2, y_circ2, 20, CORAMARELO); 
 
     v[0]=x_circ1+20*cosseno1;

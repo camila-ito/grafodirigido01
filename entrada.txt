@@ -1,13 +1,18 @@
 a b
-a c
 b c
-b d
+d a
+d c
+f a
+b f
 e f
-f e
-            
-
-
-
-
-
+f g
+w a
+a w
+q f
+r g
+e f
+y u
+p l
+l o
+o e
 
