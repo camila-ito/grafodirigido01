@@ -199,5 +199,8 @@ int seta(BITMAP *buff, float x_circ1, float y_circ1, float x_circ2, float y_circ
     seno1 = (ymedio - y_circ1)/distancia1;
     cosseno1 = (xmedio -  x_circ1)/distancia1;
 
+    circle(buff, x_circ1, y_circ1,20, CORVERDE);
+ 
+
     return 0;
 }
