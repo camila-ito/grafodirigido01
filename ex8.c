@@ -99,7 +99,8 @@ int main(void)
     if(v[6]<v[0])
     {
         yd = MODULO(yd);
-    
+        if(v[7]<v[1])
+            xd = -1* MODULO(xd);
     }    
 
 
