@@ -105,36 +105,10 @@ int main(void)
     v[4] = v[2] = xa - yd*0.35;
     v[5] = v[3] = y - xd*o.35;
 
-    /*distacia entre os dois centros*/ 
-    printf("distancia %f\n ",distancia);
-    printf("divisao %f \n",(x_circulo2 - x_circulo1)/y_circulo2 - y_circulo1);
-    printf("diferenca y %f \n",y_circulo2 - y_circulo1);
-
-    ang= acos((y_circulo2 - y_circulo1)/(x_circulo2 - x_circulo1));/*angulo total de abertura*/
-
-    printf("ang %f\n",ang);
-    grau = ang*180/3.14; 
-    printf("grau %f\n",grau);
-    sen = sin(grau - 60);
-    cosse = cos(grau-60);
-
-    y1 = y_circulo1 + sen*distancia; /*descubro a altura do centro */
-    x1 = x_circulo1 + cosse *distancia; /*o valor em x do cento*/
-    tang = atan((y_circulo2-y_circulo1)/(x_circulo2-x_circulo1));
-
-    raio = sqrt(pow(x1 - x_circulo1,2) + pow(y1 - y_circulo1,2));
-    putpixel(buff,x1,y1,CORVERDE);
-
-    arc(buff,x1,y1,itofix(tang),itofix(tang+60), raio ,CORAMARELO);
-    circlefill(buff, x_circulo1, y_circulo1,20, CORAZUL);
-    circlefill(buff, x_circulo2, y_circulo2, 20, CORAZUL);
-
-    v[0]=x_circ1;
-    v[1]=y_circ1;
-    v[6]=x_circ2;
-    v[7]=y_circ2;
-    v[4]=v[2]=xa - yd*0.35;
-    v[5]=v[3]=y - xd*0.35;
+    
+    
+    
+    
     spline(buff, v, CORVERDE); 
 
     /*printf("Considerando que o primeiro circulo e a origem do indicador, qual a coordenada em que deseja o eixo x do primeiro circulo?(max 640)");
