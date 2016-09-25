@@ -57,7 +57,7 @@ int main(void)
 {
     PALETTE pal;
     char letra[20][2], graf[20];
-    int n,/*numero de automatos*/
+    int j,/*numero de automatos*/
         xtela, ytela; /*valores centrais*/
         l, k, /*variaveis de controle*/
     double x_circulo1, y_circulo1;
@@ -79,7 +79,7 @@ int main(void)
     i = entrada(letra);
     j = quant_graf(letra, graf, i);
     graus = (2*PI)/n; 
-    xtela = 600*n/8;
+    xtela = 600*j/8;
     ytela = 400*j/8;
     
     BITMAP *buff = create_bitmap(xtela,ytela);
@@ -118,30 +118,23 @@ END_OF_MAIN();
  */
 int entrada(char letra[][2])
 {
-    int i, k;
+    int i = 0, k;
     FILE  *arquivo=NULL; 
 
     arquivo = fopen("entrada.txt", "r");
 
     if(arquivo==NULL)
-    {
         printf("erro no carregamento do arquivo\n");
-        //return EXIT_FAILURE;
-    }
-
-    i=0;
-
+        /*return EXIT_FAILURE;*/
     while(fscanf(arquivo, "%c %c\n", &letra[i][0], &letra[i][1]) != EOF) 
         i++;
 
     printf("letra:\n");
-
     for(k=0; k<i; k++)
     {
         printf("%c",letra[k][0]);
         printf("%c\n",letra[k][1]);
     }
-
     fclose(arquivo);
 
     return i;
