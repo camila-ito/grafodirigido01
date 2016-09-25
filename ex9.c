@@ -46,6 +46,12 @@
 int entrada(char letra[][2]);
 int quant_graf(char letra[][2], char *graf, int i);
 
+/* --------------------------------------------------------------------------*/
+/**
+ * \brief 
+ *
+ * \return 
+ */
 int main(void)
 {
       PALETTE pal;
@@ -101,6 +107,14 @@ int main(void)
 }
 END_OF_MAIN();
 
+/* --------------------------------------------------------------------------*/
+/**
+ * \brief 
+ *
+ * \param letra[][2]
+ *
+ * \return 
+ */
 int entrada(char letra[][2])
 {
     int i, k;
@@ -131,6 +145,17 @@ int entrada(char letra[][2])
 
     return i;
 }
+
+/* --------------------------------------------------------------------------*/
+/**
+ * \brief 
+ *
+ * \param letra[][2]
+ * \param graf
+ * \param i
+ *
+ * \return 
+ */
 int quant_graf(char letra[][2], char *graf, int i)
 {
     int k, j, m, l; /*variaveis de controle*/
@@ -161,3 +186,4 @@ int quant_graf(char letra[][2], char *graf, int i)
 
     return j
 }
+
