@@ -194,5 +194,8 @@ int seta(BITMAP *buff, float x_circ1, float y_circ1, float x_circ2, float y_circ
 
     distancia1=sqrt(pow(xmedio - x_circ1,2)+pow(ymedio - y_circ1,2)); /*distacia entre os dois centros*/ 
 
+    seno2 = (ymedio - y_circ2)/distancia2;
+    seno1 = (ymedio - y_circ1)/distancia1;
+
     return 0;
 }
