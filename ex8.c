@@ -86,6 +86,8 @@ int main(void)
     circle(buff, x_circ1, y_circ1, 20, CORVERDE);
     circle(buff, x_circ2, y_circ2, 20, CORAMARELO);
 
+    v[0]=x_circ1+20*cosseno1;
+
     /*distacia entre os dois centros*/ 
     printf("distancia %f\n ",distancia);
     printf("divisao %f \n",(x_circulo2 - x_circulo1)/y_circulo2 - y_circulo1);
