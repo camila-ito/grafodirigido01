@@ -45,7 +45,7 @@ int main(void)
 {
     BITMAP *buff;
     PALETTE pal;
-    int v[8];
+    int v[8], xa, y;
     double x_circulo1, y_circulo1;
     double x_circulo2, y_circulo2;
     float y1, distancia=0, x1, tang;
