@@ -64,13 +64,13 @@ int main(void)
     /*comeco do codigo*/
 
     printf("digite o valor do x circulo1\n");
-    scanf("%lf",&x_circ1);
+    scanf("%f",&x_circ1);
     printf("digite o valor y do circulo1\n");
-    scanf("%lf",&y_circ1);
+    scanf("%f",&y_circ1);
     printf("digite o valor do x do circulo2\n");
-    scanf("%lf",&x_circ2);
+    scanf("%f",&x_circ2);
     printf("digite o valor do y do circulo2\n");
-    scanf("%lf", &y_circ2);
+    scanf("%f", &y_circ2);
 
     xmedio = (x_circ1+x_circ2)/2;
     ymedio = (y_circ1+y_circ2)/2;
