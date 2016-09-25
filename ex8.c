@@ -91,6 +91,9 @@ int main(void)
     v[6]=x_circ2+20*cosseno2;
     v[7]=y_circ2+20*seno2;
 
+    xa = (v[0]+v[6])/2;
+    y = (v[1]+v[7])/2;
+
     /*distacia entre os dois centros*/ 
     printf("distancia %f\n ",distancia);
     printf("divisao %f \n",(x_circulo2 - x_circulo1)/y_circulo2 - y_circulo1);
