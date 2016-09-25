@@ -182,7 +182,8 @@ int quant_graf(char letra[][2], char *graf, int i)
 }
 
 int seta(BITMAP *buff, float x_circ1, float y_circ1, float x_circ2, float y_circ2)
-{   int/* r,*/v[8], xa, y, xd, yd;
+{
+    int/* r,*/v[8], xa, y, xd, yd;
     float  A,x1,x2,x3,y1,y2,y3,sent,cost;/*circunferencia1*/
     float  seno1,seno2,cosseno1,cosseno2,distancia1,distancia2;/*d,xm,ym,*/
     int xmedio,ymedio;/*ponto medio entre elas*/
@@ -200,7 +201,10 @@ int seta(BITMAP *buff, float x_circ1, float y_circ1, float x_circ2, float y_circ
     cosseno1 = (xmedio -  x_circ1)/distancia1;
 
     circle(buff, x_circ1, y_circ1,20, CORVERDE);
-    circle(buff, x_circ2, y_circ2, 20, CORAMARELO); 
+    ciracle(buff, x_circ2, y_circ2, 20, CORAMARELO); 
+
+    v[0]=x_circ1+20*cosseno1;
+    
 
     return 0;
 }
