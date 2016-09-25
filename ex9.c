@@ -209,6 +209,7 @@ int seta(BITMAP *buff, float x_circ1, float y_circ1, float x_circ2, float y_circ
     v[7]=y_circ2+20*seno2;
     xa = (v[0] + v[6])/2;
     y = (v[1] + v[7])/2;
+    xd = v[0] - v[6];
 
 
 
