@@ -239,5 +239,7 @@ int seta(BITMAP *buff, float x_circ1, float y_circ1, float x_circ2, float y_circ
     putpixel(buff, v[2],v[3], CORVERMELHO);
     putpixel(buff, x_circ1, y_circ1, CORBRANCO);
     putpixel(buff, x_circ2, y_circ2, CORBRANCO);
+    putpixel(buff, xmedio, ymedio , CORBRANCO);
     return 0;
 }
+
