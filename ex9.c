@@ -43,6 +43,7 @@
 #include <allegro.h>
 #include <math.h> 
 
+int entrada(char letra[][2]);
 int quant_graf(char letra[][2], char *graf, int i);
 
 int main(void)
@@ -97,6 +98,18 @@ int main(void)
 }
 END_OF_MAIN();
 
+int entrada(char letra[][2])
+{
+    int i, k;
+    FILE  *arquivo=NULL; 
+
+    arquivo = fopen("entrada.txt", "r");
+
+
+    fclose(arquivo);
+
+    return i;
+}
 int quant_graf(char letra[][2], char *graf, int i)
 {
     int k, j, m, l; /*variaveis de controle*/
