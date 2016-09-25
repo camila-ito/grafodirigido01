@@ -49,6 +49,7 @@ int quant_graf(char letra[][2], char *graf, int i);
 int main(void)
 {
       PALETTE pal;
+      char letra[20][2], graf[20];
       int n,/*numero de automatos*/
           xtela, ytela; /*valores centrais*/
           l, k, /*variaveis de controle*/
