@@ -103,4 +103,10 @@ int quant_graf(char letra[][2], char *graf, int i)
         graf[k] = 0;
     j = 0;
     l = 0;
+    for(m = 0; m < 2; m++)
+    {
+
+    }
+
+    return j
 }
