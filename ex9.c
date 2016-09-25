@@ -114,7 +114,6 @@ int main(void)
                 saida[k][1]  = posicoes[l][2];
             }
         }    
-    /*raio = sqrt(pow(x1 - x_circulo1,2) + pow(y1 - y_circulo1,2)); calculo do raio*/
     
     putpixel(buff,x1,y1,CORVERDE); 
 
