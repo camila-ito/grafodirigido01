@@ -124,7 +124,10 @@ int main(void)
         v[7]=ym+r/4.3;
         }*/
     A=sqrt(pow(v[6]-v[4],2)+pow(v[7]-v[5],2));
-
+    /*if(v[5]>v[7])
+        sent=(-1*(v[7]-v[5]))/A;
+    else*/
+     
     sent=(v[7]-v[5])/A;
     cost=(v[6]-v[4])/A;
 
