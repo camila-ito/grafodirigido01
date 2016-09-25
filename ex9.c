@@ -95,3 +95,8 @@
 }
 END_OF_MAIN();
 
+int quant_graf(char letra[][2], char *graf, int i)
+{
+    int k, j, m, l; /*variaveis de controle*/
+    
+}
