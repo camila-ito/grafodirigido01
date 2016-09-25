@@ -233,7 +233,7 @@ int seta(BITMAP *buff, float x_circ1, float y_circ1, float x_circ2, float y_circ
     x3=v[6] -10*cost -4*sent;
     y3=v[7] -10*sent +4*cost;
 
-    spline(buff,CORVERDE);
+    spline(buff,vCORVERDE);
 
 
     return 0;
