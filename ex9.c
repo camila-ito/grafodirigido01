@@ -78,7 +78,7 @@ int main(void)
 
     i = entrada(letra);
     j = quant_graf(letra, graf, i);
-    graus = (2*PI)/n; 
+    graus = (2*PI)/n;    /* (2*PI)/j */
     xtela = 600*j/8;
     ytela = 400*j/8;
     
@@ -182,6 +182,8 @@ int quant_graf(char letra[][2], char *graf, int i)
 }
 
 int seta(BITMAP *buff, float x_circ1, float y_circ1, float x_circ2, float y_circ2)
-{
+{   int/* r,*/v[8], xa, y, xd, yd;
+    float  A,x1,x2,x3,y1,y2,y3,sent,cost;/*circunferencia1*/
+
     return 0;
 }
