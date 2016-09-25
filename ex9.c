@@ -109,6 +109,10 @@ int main(void)
                 ent[k][1]  = posicoes[l][2];   
             }
             if(letra[k][1] == posicoes[l][0])
+            {
+                saida[k][0]  = posicoes[l][1];
+
+            }
         }    
     /*raio = sqrt(pow(x1 - x_circulo1,2) + pow(y1 - y_circulo1,2)); calculo do raio*/
     
