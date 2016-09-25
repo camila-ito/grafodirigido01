@@ -46,7 +46,9 @@
  int main(void)
 {
       PALETTE pal;
-      int n; /*numero de automatos*/
+      int n,/*numero de automatos*/
+          xtela, ytela; /*valores centrais*/
+          l, k, /*variaveis de controle*/
       double x_circulo1, y_circulo1;
       double x_circulo2, y_circulo2;
       float y1, distancia=0, x1, tang;
