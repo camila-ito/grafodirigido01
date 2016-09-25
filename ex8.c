@@ -78,6 +78,8 @@ int main(void)
     distancia2=sqrt(pow(xmedio - x_circ2,2)+pow(ymedio - y_circ2,2));
     distancia1=sqrt(pow(xmedio - x_circ1,2)+pow(ymedio - y_circ1,2));
 
+    seno2 = (ymedio - y_circ2)/distancia2;
+    cosseno2 = (xmedio - x_circ2)/distancia2;
 
     /*distacia entre os dois centros*/ 
     printf("distancia %f\n ",distancia);
