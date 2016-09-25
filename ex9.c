@@ -45,6 +45,7 @@
 
 int entrada(char letra[][2]);
 int quant_graf(char letra[][2], char *graf, int i);
+int seta(BITMAP *buff, float x_circ1, float y_circ1, float x_circ2, float y_circ2);
 
 /* --------------------------------------------------------------------------*/
 /**
@@ -54,56 +55,56 @@ int quant_graf(char letra[][2], char *graf, int i);
  */
 int main(void)
 {
-      PALETTE pal;
-      char letra[20][2], graf[20];
-      int n,/*numero de automatos*/
-          xtela, ytela; /*valores centrais*/
-          l, k, /*variaveis de controle*/
-      double x_circulo1, y_circulo1;
-      double x_circulo2, y_circulo2;
-      float raio = 20.0, /*320 e 240 dimencoes do bitmap - sugestao*/
-            posx, posy;
-      double ang, cosse, raio, sen, grau;
-      
-      /*configuracoes alegro*/
-      if(install_allegro(SYSTEM_NONE, &errno, atexit)!=0)
-          exit(EXIT_FAILURE);
-           
-      set_color_depth(16);
-      get_palette(pal);
-      /*fim parte1 - alegro*/
-               
-      /*comeco do codigo*/
+    PALETTE pal;
+    char letra[20][2], graf[20];
+    int n,/*numero de automatos*/
+        xtela, ytela; /*valores centrais*/
+        l, k, /*variaveis de controle*/
+    double x_circulo1, y_circulo1;
+    double x_circulo2, y_circulo2;
+    float raio = 20.0, /*320 e 240 dimencoes do bitmap - sugestao*/
+          posx, posy;
+    double ang, cosse, raio, sen, grau;
+    
+    /*configuracoes alegro*/
+    if(install_allegro(SYSTEM_NONE, &errno, atexit)!=0)
+        exit(EXIT_FAILURE);
+         
+    set_color_depth(16);
+    get_palette(pal);
+    /*fim parte1 - alegro*/
+             
+    /*comeco do codigo*/
 
-      i = entrada(letra);
-      j = quant_graf(letra, graf, i);
-      graus = (2*PI)/n; 
-      xtela = 600*n/8;
-      ytela = 400*j/8;
-      
-      BITMAP *buff = create_bitmap(xtela,ytela);
-      if(buff == NULL)
-      {
-          printf("Could not create buffer!\n");
-          exit(EXIT_FAILURE);
-      }
-      /*Create a buffer for smooth animation.*/
-      
-      /*raio = sqrt(pow(x1 - x_circulo1,2) + pow(y1 - y_circulo1,2)); calculo do raio*/
-      
-      putpixel(buff,x1,y1,CORVERDE); 
+    i = entrada(letra);
+    j = quant_graf(letra, graf, i);
+    graus = (2*PI)/n; 
+    xtela = 600*n/8;
+    ytela = 400*j/8;
+    
+    BITMAP *buff = create_bitmap(xtela,ytela);
+    if(buff == NULL)
+    {
+        printf("Could not create buffer!\n");
+        exit(EXIT_FAILURE);
+    }
+    /*Create a buffer for smooth animation.*/
+    
+    /*raio = sqrt(pow(x1 - x_circulo1,2) + pow(y1 - y_circulo1,2)); calculo do raio*/
+    
+    putpixel(buff,x1,y1,CORVERDE); 
 
-      arc(buff,x1,y1,itofix(tang),itofix(tang+60), raio ,CORAMARELO);
-      circlefill(buff, x_circulo1, y_circulo1,20, CORAZUL);
-      circlefill(buff, x_circulo2, y_circulo2, 20, CORAZUL);
-      
-      /*fim do codigo*/
-      save_bitmap(IMAGENAME, buff, pal);
-      destroy_bitmap(buff);
-      allegro_exit();
-      
-      printf("Imagem %s salva com sucesso!\n", IMAGENAME);
-      return EXIT_SUCCESS;
+    arc(buff,x1,y1,itofix(tang),itofix(tang+60), raio ,CORAMARELO);
+    circlefill(buff, x_circulo1, y_circulo1,20, CORAZUL);
+    circlefill(buff, x_circulo2, y_circulo2, 20, CORAZUL);
+    
+    /*fim do codigo*/
+    save_bitmap(IMAGENAME, buff, pal);
+    destroy_bitmap(buff);
+    allegro_exit();
+    
+    printf("Imagem %s salva com sucesso!\n", IMAGENAME);
+    return EXIT_SUCCESS;
 }
 END_OF_MAIN();
 
@@ -187,3 +188,7 @@ int quant_graf(char letra[][2], char *graf, int i)
     return j
 }
 
+int seta(BITMAP *buff, float x_circ1, float y_circ1, float x_circ2, float y_circ2)
+{
+    return 0;
+}
