@@ -208,7 +208,7 @@ int quant_graf(char letra[][2], char *graf, int i)
         }
     }
 
-    return j
+    return j;
 }
 
 int seta(BITMAP *buff, float x_circ1, float y_circ1, float x_circ2, float y_circ2)
