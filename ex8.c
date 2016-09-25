@@ -89,6 +89,7 @@ int main(void)
     v[0]=x_circ1+20*cosseno1;
     v[1]=y_circ1+20*seno1;
     v[6]=x_circ2+20*cosseno2;
+    v[7]=y_circ2+20*seno2;
 
     /*distacia entre os dois centros*/ 
     printf("distancia %f\n ",distancia);
