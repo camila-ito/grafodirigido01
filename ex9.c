@@ -138,8 +138,23 @@ int quant_graf(char letra[][2], char *graf, int i)
     j = 0;
     l = 0;
     for(m = 0; m < 2; m++)
-    {
-
+    {        
+        for(k=0; k<i; k++)
+        {
+            if(!graf[j])
+            {
+                for(l=0; l<j; l++)
+                {
+                    if(graf[l]==letra[k][m])
+                        break;
+                }
+                if(l==j)
+                {
+                    graf[j]=letra[k][m];
+                    j++;
+                }
+            }
+        }
     }
 
     return j
