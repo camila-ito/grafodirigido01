@@ -184,11 +184,12 @@ int quant_graf(char letra[][2], char *graf, int i)
 int seta(BITMAP *buff, float x_circ1, float y_circ1, float x_circ2, float y_circ2)
 {   int/* r,*/v[8], xa, y, xd, yd;
     float  A,x1,x2,x3,y1,y2,y3,sent,cost;/*circunferencia1*/
-    int xmedio,ymedio;
+    int xmedio,ymedio;/*ponto medio entre elas*/
     
     xmedio = (x_circ1+x_circ2)/2;
     ymedio = (y_circ1+y_circ2)/2;
 
+    distancia1=sqrt(pow(xmedio - x_circ1,2)+pow(ymedio - y_circ1,2)); /*distacia entre os dois centros*/ 
 
     return 0;
 }
