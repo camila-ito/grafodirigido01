@@ -36,6 +36,7 @@
 
 #define MODULO(x) ((x)>=0 ? (x) : (-1*(x))
 #define PI 3.14159265
+#define DEBUG 0
 
 #define IMAGENAME "ex9.bmp" /* nome do arquivo de imagem*/ 
 
@@ -58,13 +59,15 @@ int main(void)
     PALETTE pal;
    
     char letra[20][2], graf[20];
-    int i,ent[20][2],saida[20][2],posicoes[20][3],
+    int i, 
+        ent[20][2], saida[20][2],
+        posicoes[20][3],
         j,/*numero de automatos*/
         xtela, ytela, /*valores centrais*/
         l, k; /*variaveis de controle*/
     float raio = 20.0, /*320 e 240 dimencoes do bitmap - sugestao*/
           posx, posy;
-    double graus,anguloatual=0;
+    double graus ,anguloatual = 0;
     
     /*configuracoes alegro*/
     if(install_allegro(SYSTEM_NONE, &errno, atexit)!=0)
@@ -78,7 +81,7 @@ int main(void)
 
     i = entrada(letra);
     j = quant_graf(letra, graf, i);
-    graus = (2*PI)/j;    /* (2*PI)/j */
+    graus = (2*PI)/j;
     xtela = 600*j/8;
     ytela = 400*j/8;
     
@@ -100,6 +103,7 @@ int main(void)
         printf("posicoes %d\n", posicoes[k][1]);
         textprintf_ex(buff, font, posx, posy, CORVERDE, CORPRETO, "%c", graf[k]);
     }
+    
     for(k=0;k<i;k++)
         for(l = 0; l<j; l++)
         {
@@ -117,7 +121,12 @@ int main(void)
     
     for(k = 0;k < i ; k++ )
         seta(buff, ent[k][0], ent[k][1], saida[k][0], saida[k][1]);
-         
+    
+    if(DEBUG)
+    {
+        printf("ent %d\n", ent[k][1]);
+        printf("graf: %s, quant_graf: %d\n", graf, j);
+    }
 
     /*fim do codigo*/
     save_bitmap(IMAGENAME, buff, pal);
