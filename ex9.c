@@ -105,6 +105,11 @@ int entrada(char letra[][2])
 
     arquivo = fopen("entrada.txt", "r");
 
+    if(arquivo==NULL)
+    {
+        printf("erro no carregamento do arquivo\n");
+        //return EXIT_FAILURE;
+    }
 
     fclose(arquivo);
 
