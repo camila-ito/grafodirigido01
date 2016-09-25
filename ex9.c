@@ -43,7 +43,9 @@
 #include <allegro.h>
 #include <math.h> 
 
- int main(void)
+int quant_graf(char letra[][2], char *graf, int i);
+
+int main(void)
 {
       PALETTE pal;
       int n,/*numero de automatos*/
