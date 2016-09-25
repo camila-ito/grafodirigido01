@@ -76,6 +76,7 @@ int main(void)
     ymedio = (y_circ1+y_circ2)/2;
 
     distancia2=sqrt(pow(xmedio - x_circ2,2)+pow(ymedio - y_circ2,2));
+    distancia1=sqrt(pow(xmedio - x_circ1,2)+pow(ymedio - y_circ1,2));
 
 
     /*distacia entre os dois centros*/ 
