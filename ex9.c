@@ -237,6 +237,6 @@ int seta(BITMAP *buff, float x_circ1, float y_circ1, float x_circ2, float y_circ
     triangle(buff, x1,y1,x2,y2,x3,y3,CORVERMELHO);
 
     putpixel(buff, v[2],v[3], CORVERMELHO);
-
+    putpixel(buff, x_circ1, y_circ1, CORBRANCO);
     return 0;
 }
