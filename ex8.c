@@ -103,7 +103,7 @@ int main(void)
             xd = -1* MODULO(xd);
     }   
     v[4] = v[2] = xa - yd*0.35;
-
+    v[5] = v[3] = y - xd*o.35;
 
     /*distacia entre os dois centros*/ 
     printf("distancia %f\n ",distancia);
