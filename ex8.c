@@ -93,6 +93,8 @@ int main(void)
 
     xa = (v[0]+v[6])/2;
     y = (v[1]+v[7])/2;
+    xd = v[0] - v[6];
+    yd = v[1] - v[7];
 
     /*distacia entre os dois centros*/ 
     printf("distancia %f\n ",distancia);
