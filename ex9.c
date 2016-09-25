@@ -34,7 +34,7 @@
 #define CORAMARELO (makecol(255,255,100))
 #define CORVERMELHO (makecol(255, 0, 0))
 
-#define MODULO(x) ((x)>=0 ? (x) : (-1*(x))
+#define MODULO(x) ((x)>=0 ? (x) : (-1*(x)))
 #define PI 3.14159265
 #define DEBUG 0
 
@@ -92,7 +92,7 @@ int main(void)
         exit(EXIT_FAILURE);
     }
     /*Create a buffer for smooth animation.*/
-    for(k = 0;k<=l;k++)
+    for(k = 0;k<=j;k++)
     { 
         posx= xtela/2 +cos(anguloatual)*raio*j;
         posy= ytela/2 +cos(anguloatual)*raio*j;
@@ -214,7 +214,7 @@ int quant_graf(char letra[][2], char *graf, int i)
 int seta(BITMAP *buff, float x_circ1, float y_circ1, float x_circ2, float y_circ2)
 {
     int v[8], xa, y, xd, yd;
-    float  A,x1,x2,x3,y1,y2,y3,sent,cost;/*circunferencia1*/
+    float  A, x1, x2, x3, y1, y2, y3, sent, cost;/*circunferencia1*/
     float  seno1,seno2,cosseno1,cosseno2,distancia1,distancia2;
     int xmedio,ymedio;/*ponto medio entre elas*/
     
