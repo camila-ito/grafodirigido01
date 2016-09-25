@@ -72,9 +72,10 @@
 
       graus = (2*PI)/n; 
       xtela = 600*n/8;
+      ytela = 400*j/8;
 
-      raio = sqrt(pow(x1 - x_circulo1,2) + pow(y1 - y_circulo1,2));
-      putpixel(buff,x1,y1,CORVERDE);
+      /*raio = sqrt(pow(x1 - x_circulo1,2) + pow(y1 - y_circulo1,2)); calculo do raio*/
+      putpixel(buff,x1,y1,CORVERDE); 
 
       arc(buff,x1,y1,itofix(tang),itofix(tang+60), raio ,CORAMARELO);
       circlefill(buff, x_circulo1, y_circulo1,20, CORAZUL);
