@@ -220,7 +220,7 @@ int seta(BITMAP *buff, float x_circ1, float y_circ1, float x_circ2, float y_circ
     seno2 = (ymedio - y_circ2)/distancia2; /*calculo do seno do segundo ponto*/
     cosseno2 = (xmedio -  x_circ2)/distancia2; /*calculo do cosseno do segundo ponto*/
     seno1 = (ymedio - y_circ1)/distancia1; /*calculo do seno do primeiro ponto*/ 
-    cosseno1 = (xmedio -  x_circ1)/distancia1; /*calculo do cosseno do segundo ponto*/
+    cosseno1 = (xmedio -  x_circ1)/distancia1; /*calculo do cosseno do primeiro ponto*/
 
     circle(buff, x_circ1, y_circ1,20, CORVERDE);
     ciracle(buff, x_circ2, y_circ2, 20, CORAMARELO); 
