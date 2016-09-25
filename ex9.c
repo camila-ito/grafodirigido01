@@ -18,15 +18,13 @@
  *  59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.             *
  ***************************************************************************/
   
- /* Template para programa basico Allegro
-  * que salva uma imagem em arquivo
-  * Para compilar use:
-  * $gcc ex9.c -o ex9.x -Wall -lm `allegro-config --cflags --libs`
-  */
-  
-  
+/* Template para programa basico Allegro
+ * que salva uma imagem em arquivo
+ * Para compilar use:
+ * $gcc ex9.c -o ex9.x -Wall -lm `allegro-config --cflags --libs`
+ */
+ 
  /* Definicoes de algumas cores */
-  
 #define CORBRANCO (makecol(255,255,255))
 #define CORPRETO 1
 #define CORCINZA (makecol(160,160,160))
@@ -34,8 +32,10 @@
 #define CORVERDE (makecol(0, 255, 0))
 #define CORAMARELO (makecol(255,255,100))
 #define CORVERMELHO (makecol(255, 0, 0))
-  
-#define IMAGENAME "ex8.bmp" /* nome do arquivo de imagem*/ 
+
+#define MODULO(x) ((x)>=0 ? (x) : (-1*(x))
+
+#define IMAGENAME "ex9.bmp" /* nome do arquivo de imagem*/ 
 #include <stdio.h>
 #include <allegro.h>
 #include <math.h> 
