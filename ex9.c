@@ -213,6 +213,11 @@ int seta(BITMAP *buff, float x_circ1, float y_circ1, float x_circ2, float y_circ
     yd = v[1] - v[7];
     xd = MODULO(xd);
     if(v[6]<v[0])
+    {
+        yd = MODULO(yd);
+        if(v[7]<v[1])
+            xd = -1 * MODULO(xd);
+    }
 
 
 
