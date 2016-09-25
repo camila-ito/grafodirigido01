@@ -47,8 +47,7 @@ int main(void)
     PALETTE pal;
     int v[8], xa, y, xd, yd;
     float A, x1, x2, x3, y1, y2, y3, sent, cost, x_circ1, y_circ1;
-    double ang, cosse, raio, sen, cosse2, cossef, grau;
-
+    float seno1, seno2, cosseno1, cosseno2; 
     if(install_allegro(SYSTEM_NONE, &errno, atexit)!=0)
         exit(EXIT_FAILURE);
 
