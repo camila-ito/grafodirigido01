@@ -51,7 +51,8 @@
           l, k, /*variaveis de controle*/
       double x_circulo1, y_circulo1;
       double x_circulo2, y_circulo2;
-      float y1, distancia=0, x1, tang;
+      float raio = 20.0, /*320 e 240 dimencoes do bitmap - sugestao*/
+            posx, posy;
       double ang, cosse, raio, sen, grau;
       
       /*configuracoes alegro*/
