@@ -123,6 +123,7 @@ int main(void)
         v[6]=xm+r/4.3;
         v[7]=ym+r/4.3;
     }*/
+    A=sqrt(pow(v[6]-v[4],2)+pow(v[7]-v[5],2));
     
     
     spline(buff, v, CORVERDE); 
