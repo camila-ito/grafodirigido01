@@ -50,11 +50,14 @@
       double x_circulo2, y_circulo2;
       float y1, distancia=0, x1, tang;
       double ang, cosse, raio, sen, grau;
+      
+      /*configuracoes alegro*/
       if(install_allegro(SYSTEM_NONE, &errno, atexit)!=0)
           exit(EXIT_FAILURE);
            
       set_color_depth(16);
       get_palette(pal);
+      /*fim parte1 - alegro*/
                
       /*Create a buffer for smooth animation.*/
       BITMAP *buff = create_bitmap(320,240);
@@ -63,6 +66,7 @@
           printf("Could not create buffer!\n");
           exit(EXIT_FAILURE);
       }
+      
       /*comeco do codigo*/
 
       printf("ang %f\n",ang);
