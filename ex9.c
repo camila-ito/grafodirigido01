@@ -69,8 +69,7 @@
       
       /*comeco do codigo*/
 
-      printf("ang %f\n",ang);
-      grau = ang*180/3.14; 
+      graus = (2*PI)/n; 
       printf("grau %f\n",grau);
       sen = sin(grau - 60);
       cosse = cos(grau-60);
