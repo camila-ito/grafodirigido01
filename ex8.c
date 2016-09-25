@@ -127,6 +127,9 @@ int main(void)
     
     sent=(v[7]-v[5])/A;
     cost=(v[6]-v[4])/A;
+
+    x1=v[6];
+    y1=v[7];
     
     spline(buff, v, CORVERDE); 
 
