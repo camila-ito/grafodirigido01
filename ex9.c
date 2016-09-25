@@ -95,7 +95,7 @@ int main(void)
     for(k = 0;k<=j;k++)
     { 
         posx= xtela/2 +cos(anguloatual)*raio*j;
-        posy= ytela/2 +cos(anguloatual)*raio*j;
+        posy= ytela/2 +sin(anguloatual)*raio*j;
         anguloatual+= graus;
         posicoes[k][0] = graf[k];
         posicoes[k][1] = posx;
