@@ -224,6 +224,8 @@ int seta(BITMAP *buff, float x_circ1, float y_circ1, float x_circ2, float y_circ
     A=sqrt(pow(v[6]-v[4],2)+pow(v[7]-v[5],2));
 
     sent=(v[7]-v[5])/A;
+    cost=(v[6]-v[4])/A;
+
 
 
     return 0;
