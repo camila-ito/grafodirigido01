@@ -60,21 +60,22 @@
       get_palette(pal);
       /*fim parte1 - alegro*/
                
-      /*Create a buffer for smooth animation.*/
-      BITMAP *buff = create_bitmap(320,240);
-      if(buff == NULL)
-      {
-          printf("Could not create buffer!\n");
-          exit(EXIT_FAILURE);
-      }
-      
       /*comeco do codigo*/
 
       graus = (2*PI)/n; 
       xtela = 600*n/8;
       ytela = 400*j/8;
-
+      
+      BITMAP *buff = create_bitmap(xtela,ytela);
+      if(buff == NULL)
+      {
+          printf("Could not create buffer!\n");
+          exit(EXIT_FAILURE);
+      }
+      /*Create a buffer for smooth animation.*/
+      
       /*raio = sqrt(pow(x1 - x_circulo1,2) + pow(y1 - y_circulo1,2)); calculo do raio*/
+      
       putpixel(buff,x1,y1,CORVERDE); 
 
       arc(buff,x1,y1,itofix(tang),itofix(tang+60), raio ,CORAMARELO);
