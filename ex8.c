@@ -83,6 +83,8 @@ int main(void)
     seno1 = (ymedio - y_circ1)/distancia1;
     cosseno1 = (xmedio - x_circ1)/distancia1;
 
+    circle(buff, x_circ1, y_circ1, 20, CORVERDE);
+
     /*distacia entre os dois centros*/ 
     printf("distancia %f\n ",distancia);
     printf("divisao %f \n",(x_circulo2 - x_circulo1)/y_circulo2 - y_circulo1);
