@@ -25,6 +25,7 @@
  */
  
  /* Definicoes de algumas cores */
+
 #define CORBRANCO (makecol(255,255,255))
 #define CORPRETO 1
 #define CORCINZA (makecol(160,160,160))
@@ -34,8 +35,10 @@
 #define CORVERMELHO (makecol(255, 0, 0))
 
 #define MODULO(x) ((x)>=0 ? (x) : (-1*(x))
+#define PI 3.14159265
 
 #define IMAGENAME "ex9.bmp" /* nome do arquivo de imagem*/ 
+
 #include <stdio.h>
 #include <allegro.h>
 #include <math.h> 
