@@ -104,9 +104,17 @@ int main(void)
     }   
     v[4] = v[2] = xa - yd*0.35;
     v[5] = v[3] = y - xd*o.35;
-
+   
+  /*  if(v[5]<v[7])
+    {*/     
+  /*  d=sqrt(pow(v[6]-x_circ2,2)+pow(v[7]-y_circ2,2));
+    d/=2;
+    if(v[0]<v[6]||(v[0]>v[6]&&v[1]<v[7]))
+    {
+        xm=x_circ2-(cos(45))*d;
+        ym=y_circ2-(sin(45))*d);
     
-    
+    }
     
     
     spline(buff, v, CORVERDE); 
