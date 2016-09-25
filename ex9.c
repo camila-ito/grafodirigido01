@@ -46,6 +46,7 @@
  int main(void)
 {
       PALETTE pal;
+      int n; /*numero de automatos*/
       double x_circulo1, y_circulo1;
       double x_circulo2, y_circulo2;
       float y1, distancia=0, x1, tang;
@@ -70,10 +71,8 @@
       /*comeco do codigo*/
 
       graus = (2*PI)/n; 
-      printf("grau %f\n",grau);
-      sen = sin(grau - 60);
-      cosse = cos(grau-60);
-     
+      xtela = 600*n/8;
+
       raio = sqrt(pow(x1 - x_circulo1,2) + pow(y1 - y_circulo1,2));
       putpixel(buff,x1,y1,CORVERDE);
 
