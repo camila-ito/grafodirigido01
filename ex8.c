@@ -95,6 +95,7 @@ int main(void)
     y = (v[1]+v[7])/2;
     xd = v[0] - v[6];
     yd = v[1] - v[7];
+    xd = MODULO(xd);
 
     /*distacia entre os dois centros*/ 
     printf("distancia %f\n ",distancia);
