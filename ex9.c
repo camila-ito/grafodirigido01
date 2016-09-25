@@ -234,7 +234,7 @@ int seta(BITMAP *buff, float x_circ1, float y_circ1, float x_circ2, float y_circ
 
     spline(buff, v , CORVERDE);
 
-    triangle(buff, x1,y1,y2,x2,x3,y3,CORVERMELHO);
+    triangle(buff, x1,y1,x2,y2,x3,y3,CORVERMELHO);
 
     return 0;
 }
