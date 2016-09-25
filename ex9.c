@@ -99,10 +99,12 @@ int main(void)
         posicoes[k][2] = posy;
         printf("posicoes %d\n", posicoes[k][1]);
         textprintf_ex(buff, font, posx, posy, CORVERDE, CORPRETO, "%c", graf[k]);
-
-
-
     }
+    for(k=0;k<i;k++)
+        for(l = 0; l<j; l++)
+        {
+
+        }    
     /*raio = sqrt(pow(x1 - x_circulo1,2) + pow(y1 - y_circulo1,2)); calculo do raio*/
     
     putpixel(buff,x1,y1,CORVERDE); 
