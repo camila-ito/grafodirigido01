@@ -220,7 +220,8 @@ int seta(BITMAP *buff, float x_circ1, float y_circ1, float x_circ2, float y_circ
     }
     v[4]=v[2]=xa - yd*0.35;
     v[5]=v[3]=y - xd*0.35;
-
+    
+    A=sqrt(pow(v[6]-v[4],2)+pow(v[7]-v[5],2));
 
 
 
