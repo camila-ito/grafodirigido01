@@ -93,7 +93,10 @@ int main(void)
     { 
         posx= xtela/2 +cos(anguloatual)*raio*j;
         posy= ytela/2 +cos(anguloatual)*raio*j;
-
+        anguloatual+= graus;
+        posicoes[k][0] = graf[k];
+        posicoes[k][1] = posx;
+        posicoes[k][2] = posy;
 
 
 
