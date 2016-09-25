@@ -69,6 +69,8 @@ int main(void)
                
       /*comeco do codigo*/
 
+      i = entrada(letra);
+      j = quant_graf(letra, graf, i);
       graus = (2*PI)/n; 
       xtela = 600*n/8;
       ytela = 400*j/8;
