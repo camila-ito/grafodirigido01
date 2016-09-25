@@ -111,6 +111,11 @@ int entrada(char letra[][2])
         //return EXIT_FAILURE;
     }
 
+    i=0;
+
+    while(fscanf(arquivo, "%c %c\n", &letra[i][0], &letra[i][1]) != EOF) 
+        i++;
+
     fclose(arquivo);
 
     return i;
