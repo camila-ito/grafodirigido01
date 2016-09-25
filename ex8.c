@@ -21,7 +21,7 @@
 /* Template para programa basico Allegro
  * que salva uma imagem em arquivo
  * Para compilar use:
- * $gcc ex8.c -o ex8.x -Wall `allegro-config --cflags --libs`
+ * $gcc ex8.c -o ex8.x -Wall -lm `allegro-config --cflags --libs`
  */
 
 
