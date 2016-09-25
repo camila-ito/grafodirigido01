@@ -89,7 +89,16 @@ int main(void)
         exit(EXIT_FAILURE);
     }
     /*Create a buffer for smooth animation.*/
-    
+    for(k = 0;k<=l;k++)
+    { 
+        posx= xtela/2 +cos(anguloatual)*raio*j;
+        posy= ytela/2 +cos(anguloatual)*raio*j;
+
+
+
+
+
+    }
     /*raio = sqrt(pow(x1 - x_circulo1,2) + pow(y1 - y_circulo1,2)); calculo do raio*/
     
     putpixel(buff,x1,y1,CORVERDE); 
