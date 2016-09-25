@@ -103,7 +103,7 @@ int main(void)
             xd = -1* MODULO(xd);
     }   
     v[4] = v[2] = xa - yd*0.35;
-    v[5] = v[3] = y - xd*o.35;
+    v[5] = v[3] = y - xd*0.35;
 
     /*  if(v[5]<v[7])
         {*/     
