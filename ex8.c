@@ -47,7 +47,7 @@ int main(void)
     PALETTE pal;
     int v[8], xa, y, xd, yd, xmedio, ymedio;
     float A, x1, x2, x3, y1, y2, y3, sent, cost, x_circ1, y_circ1;
-    float seno1, seno2, cosseno1, cosseno2; distancia1, distancia2, x_circ2, y_circ2;
+    float seno1, seno2, cosseno1, cosseno2, distancia1, distancia2, x_circ2, y_circ2;
     if(install_allegro(SYSTEM_NONE, &errno, atexit)!=0)
         exit(EXIT_FAILURE);
 
@@ -64,13 +64,13 @@ int main(void)
     /*comeco do codigo*/
 
     printf("digite o valor do x circulo1\n");
-    scanf("%lf",&x_circulo1);
+    scanf("%lf",&x_circ1);
     printf("digite o valor y do circulo1\n");
-    scanf("%lf",&y_circulo1);
+    scanf("%lf",&y_circ1);
     printf("digite o valor do x do circulo2\n");
-    scanf("%lf",&x_circulo2_);
+    scanf("%lf",&x_circ2);
     printf("digite o valor do y do circulo2\n");
-    scanf("%lf", &y_circulo2);
+    scanf("%lf", &y_circ2);
 
     xmedio = (x_circ1+x_circ2)/2;
     ymedio = (y_circ1+y_circ2)/2;
