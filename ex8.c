@@ -147,13 +147,12 @@ int main(void)
      }*/
 
     spline(buff, v, CORVERDE); 
-
-    /*printf("Considerando que o primeiro circulo e a origem do indicador, qual a coordenada em que deseja o eixo x do primeiro circulo?(max 640)");
-      scanf("%d", &x1);
-      while(x1<0||x1>640)
-      {
-      scanf("%d", &x1);
-      }*/    
+    triangle(buff,x1,y1,x2,y2,x3,y3,CORVERMELHO);
+    putpixel(buff, v[2], v[3],CORVERMELHO);
+    putpixel(buff, x_circ1, y_circ1,CORBRANCO);
+    putpixel(buff ,x_circ2, y_circ2,CORBRANCO);
+    putpixel(buff,xmedio, ymedio ,CORBRANCO);
+    
 
     /*fim do codigo*/
     save_bitmap(IMAGENAME, buff, pal);
