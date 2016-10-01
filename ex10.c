@@ -16,9 +16,17 @@ int main(int argc, char *argv[])
      */
      opterr = 0;
      while((opt = getopt(argc, argv, "f:h")) != EOF)
-     {
+        switch(opt)
+        {
+
+         case 'f':
+             break;
+         case 'h':
+             break;
+         case '?':
+
      
-     }
+        }  
 
     return EXIT_SUCCESS;
 }
