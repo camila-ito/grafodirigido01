@@ -10,5 +10,11 @@ int main(int argc, char *argv[])
          graf[20], ref[2],
          url[100]= "entrada.txt";
     
+    /* getopt() configured options:
+     *        -h  help
+     *        -f  flag
+     */
+     opterr = 0;
+
     return EXIT_SUCCESS;
 }
