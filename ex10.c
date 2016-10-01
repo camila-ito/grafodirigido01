@@ -28,6 +28,7 @@ int main(int argc, char *argv[])
         switch(opt)
         {
             case 'f':
+                strcpy(url, optarg);
                 break;
             case 'h':
                 break;
@@ -58,6 +59,14 @@ int entrada(char letra[][2], char url[])
         printf("erro no carregamento do arquivo\n");
     
     while(fscanf(arquivo, "%c %c\n", &letra[i][0], &letra[i][1]) != EOF) 
+        i++;
+
+    for(k=0; k < i; k++)
+    {
+        printf("%c",letra[k][0]);
+        printf("%c\n",letra[k][1]);
+    }
+    fclose(arquivo);
     
         return i;
 }
