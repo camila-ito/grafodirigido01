@@ -2,6 +2,8 @@
 #include<math.h>
 #define DEBUG 0
 
+void help(void);
+int entrada(char letra[][2], char url[]);
 /* --------------------------------------------------------------------------*/
 /**
  * \brief 
