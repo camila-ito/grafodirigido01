@@ -54,12 +54,17 @@ int main(int argc, char *argv[])
     if(DEBUG)
         printf("grafos: %s, quant_graf: %d\n", graf, j);
 
+    printf("Digite 00(zero zero) para parar o programa\n");
+
     while(1)
     {
         printf("\nAutomatos: %s\n", graf);
         printf("Digite uma relacao entre os lugares existentes:\n");
         scanf("%c%c", &rel[0], &rel[1]);
         __fpurge(stdin);
+
+        if(rel[0]=='0' && rel[1]=='0')
+            break;
 
     }
 
