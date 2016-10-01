@@ -45,6 +45,9 @@ int main(int argc, char *argv[])
 
 int entrada(char letra[][2], char url[])
 {
+    int i = 0; k;
+    FILE *arquivo = NULL;
+
 
     return i;
 }
