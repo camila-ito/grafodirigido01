@@ -2,7 +2,6 @@
 #include<math.h>
 #define DEBUG 0
 
-
 /* --------------------------------------------------------------------------*/
 /**
  * \brief 
@@ -39,7 +38,9 @@ int main(int argc, char *argv[])
         }  
     
     /*começo do codigo*/
-     
+    
+    i = 
+
     return EXIT_SUCCESS;
 }
 
@@ -47,7 +48,6 @@ int entrada(char letra[][2], char url[])
 {
     int i = 0; k;
     FILE *arquivo = NULL;
-
 
     return i;
 }
