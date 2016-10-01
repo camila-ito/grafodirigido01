@@ -18,14 +18,14 @@ int main(int argc, char *argv[])
      while((opt = getopt(argc, argv, "f:h")) != EOF)
         switch(opt)
         {
-         case 'f':
-             break;
-         case 'h':
-             break;
-         case '?':
-         default:
-             printf("Type\n\t$man %s\nor\n\t$%s -h\nfor help.\n\n", argv[0], argv[0]);
-             return EXIT_FAILURE;
+            case 'f':
+                break;
+            case 'h':
+                break;
+            case '?':
+            default:
+                printf("Type\n\t$man %s\nor\n\t$%s -h\nfor help.\n\n", argv[0], argv[0]);
+                return EXIT_FAILURE;
         }  
 
     return EXIT_SUCCESS;
