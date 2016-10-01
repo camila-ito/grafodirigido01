@@ -39,7 +39,10 @@ int main(int argc, char *argv[])
     
     /*começo do codigo*/
     
-    i = 
+    
+    if(DEBUG)
+        printf("grafos: %s, quant_graf: %d\n", graf, j);
+
 
     return EXIT_SUCCESS;
 }
@@ -49,5 +52,12 @@ int entrada(char letra[][2], char url[])
     int i = 0; k;
     FILE *arquivo = NULL;
 
-    return i;
+    arquivo = fopen(url, "r");
+
+    if(arquivo == NULL)
+        printf("erro no carregamento do arquivo\n");
+    
+    while(fscanf(arquivo, "%c %c\n", &letra[i][0], &letra[i][1]) != EOF) 
+    
+        return i;
 }
