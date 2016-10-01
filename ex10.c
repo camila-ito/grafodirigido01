@@ -15,6 +15,10 @@ int main(int argc, char *argv[])
      *        -f  flag
      */
      opterr = 0;
+     while((opt = getopt(argc, argv, "f:h")) != EOF)
+     {
+     
+     }
 
     return EXIT_SUCCESS;
 }
