@@ -48,9 +48,11 @@ int main(int argc, char *argv[])
 
     /*começo do codigo*/
 
+    i = entrada(letra, url);/*i = numero de transicoes no .txt*/
+    j = quant_graf(letra, graf, i);/*j = numero de automatos*/
+
     if(DEBUG)
         printf("grafos: %s, quant_graf: %d\n", graf, j);
-
 
     while(1)
     {
@@ -60,6 +62,7 @@ int main(int argc, char *argv[])
         __fpurge(stdin);
 
     }
+
     return EXIT_SUCCESS;
 }
 
