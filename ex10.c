@@ -44,7 +44,18 @@ int main(int argc, char *argv[])
     if(DEBUG)
         printf("grafos: %s, quant_graf: %d\n", graf, j);
 
-
+        
+    while(1)
+    {
+        printf("\nAutomatos: %s\n", graf);
+        printf("Digite uma relacao entre os lugares existentes:\n");
+        scanf("%c%c", &rel[0], &rel[1]);
+        
+        do{
+            __fpurge(stdin);
+        } while(rel[0] == '\n' || rel[1] == '\n');
+        
+    }
     return EXIT_SUCCESS;
 }
 
