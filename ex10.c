@@ -1,5 +1,7 @@
-#include<stdio.h>
-#include<math.h>
+#include <stdio.h>
+#include <stdio_ext.h>
+#include <string.h>
+#include <math.h>
 #define DEBUG 0
 
 void help(void);
@@ -18,7 +20,7 @@ int main(int argc, char *argv[])
     int i, r, opt,
         j; /*numero de automatos*/
     char letra[20][2], 
-         graf[20], ref[2],
+         graf[20], rel[2],
          url[100]= "entrada.txt";
     
     /* getopt() configured options:
@@ -64,7 +66,7 @@ int main(int argc, char *argv[])
 
 int entrada(char letra[][2], char url[])
 {
-    int i = 0; k;
+    int i = 0, k;
     FILE *arquivo = NULL;
 
     arquivo = fopen(url, "r");
@@ -82,7 +84,7 @@ int entrada(char letra[][2], char url[])
     }
     fclose(arquivo);
     
-        return i;
+    return i;
 }
 void help(void)
 {
