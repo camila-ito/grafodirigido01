@@ -8,6 +8,7 @@
 
 void help(void);
 int entrada(char letra[][2], char url[]);
+int quant_graf(char letra[][2], char *graf, int i);
 /* --------------------------------------------------------------------------*/
 /**
  * \brief 
@@ -84,9 +85,23 @@ int entrada(char letra[][2], char url[])
 
     return i;
 }
+
+int quant_graf(char letra[][2], char *graf, int i)
+{
+    int k, m,
+        j = 0, l = 0;/*variaveis de controle*/
+
+    for(k = 0; k < 20; k++)
+        graf[k] = 0;
+    
+    return j;
+}
+
+
 void help(void)
 {
     printf("%s - %s\n", "ex10", "Analise de grafos");
     printf("\nUsage: %s [-h|-f]\n", "ex10"); 
+    exit(EXIT_FAILURE);
 }
 
