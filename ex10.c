@@ -31,6 +31,7 @@ int main(int argc, char *argv[])
                 strcpy(url, optarg);
                 break;
             case 'h':
+                help();
                 break;
             case '?':
             default:
@@ -81,3 +82,9 @@ int entrada(char letra[][2], char url[])
     
         return i;
 }
+void help(void)
+{
+    printf("%s - %s\n", "ex10", "Analise de grafos");
+    printf("\nUsage: %s [-h|-f]\n", "ex10"); 
+}
+
