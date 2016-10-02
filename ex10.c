@@ -9,6 +9,7 @@
 void help(void);
 int entrada(char letra[][2], char url[]);
 int quant_graf(char letra[][2], char *graf, int i);
+int verifica(int i, char letra[][2], char reli, char relf);/*reli = relacao inicial// relf = relacao final*/
 /* --------------------------------------------------------------------------*/
 /**
  * \brief 
@@ -66,11 +67,19 @@ int main(int argc, char *argv[])
         if(rel[0]=='0' && rel[1]=='0')
             break;
 
+        /*verifica(int i, char letra[][2], char reli, char relf)*//*reli = relacao inicial// relf = relacao final*/
     }
 
     return EXIT_SUCCESS;
 }
 
+int verifica(int i, char letra[][2], char reli, char relf)/*reli = relacao inicial// relf = relacao final*/
+{
+    int ;
+    char ;
+
+    return 0;
+}
 /* --------------------------------------------------------------------------*/
 /**
  * \brief 
