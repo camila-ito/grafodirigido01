@@ -9,6 +9,8 @@
 
 #define DEBUG 0
 
+static int recur = 0;
+
 void help(void);
 int entrada(char letra[][2], char url[]);
 int quant_graf(char letra[][2], char *graf, int i);
