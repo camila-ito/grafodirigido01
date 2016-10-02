@@ -121,10 +121,10 @@ int verifica(int i, char letra[][2], char reli, char relf, int para[])/*reli = r
             else
             {
                 r = verifica(i, letra, letra[k][1], relf, para);
+                if(r)
+                    break;
 
             }
-        
-
         }
     }
 
