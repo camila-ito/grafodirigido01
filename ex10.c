@@ -118,6 +118,19 @@ int main(int argc, char *argv[])
     return EXIT_SUCCESS;
 }
 
+
+/* --------------------------------------------------------------------------*/
+/**
+ * \brief  a funcao pra verificar o percurso
+ *
+ * \param i
+ * \param letra[][2]
+ * \param reli
+ * \param relf
+ * \param para[]
+ *
+ * \return 
+ */
 int verifica(int i, char letra[][2], char reli, char relf, int para[])/*reli = relacao inicial// relf = relacao final*/
 {
     int k, r = 0, j;
@@ -206,7 +219,7 @@ int entrada(char letra[][2], char url[])
 
 /* --------------------------------------------------------------------------*/
 /**
- * \brief 
+ * \brief quantidade de transicoes
  *
  * \param letra[][2]
  * \param graf
