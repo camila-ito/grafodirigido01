@@ -107,9 +107,11 @@ int verifica(int i, char letra[][2], char reli, char relf)/*reli = relacao inici
                     break;                    
             }
             if(j==recur)
+            {
                 para[recur] = k;
                 recur++;
-        }
+            }
+        
 
         }
     }
