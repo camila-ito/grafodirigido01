@@ -14,7 +14,7 @@ static int recur = 0;
 void help(void);
 int entrada(char letra[][2], char url[]);
 int quant_graf(char letra[][2], char *graf, int i);
-int verifica(int i, char letra[][2], char reli, char relf);/*reli = relacao inicial// relf = relacao final*/
+int verifica(int i, char letra[][2], char reli, char relf, int para[]);/*reli = relacao inicial// relf = relacao final*/
 /* --------------------------------------------------------------------------*/
 /**
  * \brief 
@@ -78,7 +78,7 @@ int main(int argc, char *argv[])
 
         if(r)
         {
-            if(recuf == 1)
+            if(recur == 1)
                 printf("Caminho\n");
             else
                 printf("Circuito\n");
@@ -86,7 +86,6 @@ int main(int argc, char *argv[])
         else
             printf("Nao ha conexao\n");
 
-        /*verifica(int i, char letra[][2], char reli, char relf)*//*reli = relacao inicial// relf = relacao final*/
     }
 
     return EXIT_SUCCESS;
@@ -122,7 +121,6 @@ int verifica(int i, char letra[][2], char reli, char relf, int para[])/*reli = r
                 r = verifica(i, letra, letra[k][1], relf, para);
                 if(r)
                     break;
-
             }
         }
     }
