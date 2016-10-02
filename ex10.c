@@ -1,4 +1,5 @@
 #define MODULO(x) ((x)>=0 ? (x) : (-1*(x)))
+#define PI 3.14159265
 
 #include <stdio.h>
 #include <stdio_ext.h>
