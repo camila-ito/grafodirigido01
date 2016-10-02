@@ -95,7 +95,6 @@ int main(int argc, char *argv[])
 int verifica(int i, char letra[][2], char reli, char relf, int para[])/*reli = relacao inicial// relf = relacao final*/
 {
     int k, r = 0, j;
-    char ;
 
     for(k = 0; k < i; k++)
     {
@@ -130,7 +129,7 @@ int verifica(int i, char letra[][2], char reli, char relf, int para[])/*reli = r
     if(recur > 100)
         r = 1;
 
-    return 0;
+    return r;
 }
 /* --------------------------------------------------------------------------*/
 /**
