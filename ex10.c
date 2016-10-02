@@ -60,7 +60,7 @@ int main(int argc, char *argv[])
     if(DEBUG)
         printf("grafos: %s, quant_graf: %d\n", graf, j);
 
-    printf("Digite 00(zero zero) para parar o programa\n");
+    printf("Digite \"--\" para parar o programa\n");
 
     while(1)
     {
@@ -69,7 +69,7 @@ int main(int argc, char *argv[])
         scanf("%c%c", &rel[0], &rel[1]);
         __fpurge(stdin);
 
-        if(rel[0]=='0' && rel[1]=='0')
+        if(rel[0]=='-' && rel[1]=='-')
             break;
 
         recur = 0;
