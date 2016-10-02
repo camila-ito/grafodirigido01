@@ -97,30 +97,30 @@ int verifica(int i, char letra[][2], char reli, char relf, int para[])/*reli = r
     int k, r = 0, j;
     char ;
 
-    for(k=0; k<i; k++)
+    for(k = 0; k < i; k++)
     {
         if(reli == letra[k][0])
         {
             for(j = 0; j < recur; j++)
             {
-                if(para[j]==k)
+                if(para[j] == k)
                     break;                    
             }
-            if(j==recur)
+            if(j == recur)
             {
                 para[recur] = k;
                 recur++;
             }
             else
                 continue;
-            if(letra[k][1]==relf)
+            if(letra[k][1] == relf)
             {
                 r = 1;
                 break;
             }
             else
             {
-                r = verifca(i, letra, letra[k][1], relf, para);
+                r = verifica(i, letra, letra[k][1], relf, para);
 
             }
         
