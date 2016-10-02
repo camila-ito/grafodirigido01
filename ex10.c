@@ -97,6 +97,14 @@ int verifica(int i, char letra[][2], char reli, char relf)/*reli = relacao inici
     int k, r = 0;
     char ;
 
+    for(k=0; k<i; k++)
+    {
+        if(rei==letra[k][0])
+        {
+
+        }
+    }
+
     return 0;
 }
 /* --------------------------------------------------------------------------*/
