@@ -72,6 +72,12 @@ int main(int argc, char *argv[])
         if(rel[0]=='0' && rel[1]=='0')
             break;
 
+        recur = 0;
+
+        r = verifica(i, letra, rel[0], rel[1], para);
+
+
+
         /*verifica(int i, char letra[][2], char reli, char relf)*//*reli = relacao inicial// relf = relacao final*/
     }
 
