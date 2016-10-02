@@ -95,6 +95,37 @@ int verifica(int i, char letra[][2], char reli, char relf, int para[])/*reli = r
 {
     int k, r = 0, j;
 
+    if(!recur)
+        for(k = 0; k < i; k++)
+        {
+            if(reli == letra[k][0])
+            {
+                for(j = 0; j < recur; j++)
+                {
+                    if(para[j] == k)
+                        break;                    
+                }
+                if(j == recur)
+                {
+                    para[recur] = k;
+                    recur++;
+                }
+                else
+                    continue;
+                if(letra[k][1] == relf)
+                {
+                    r = 1;
+                    break;
+                }
+                else
+                {
+                    r = verifica(i, letra, letra[k][1], relf, para);
+                    if(r)
+                        break;
+                }
+            }
+        }
+
     for(k = 0; k < i; k++)
     {
         if(reli == letra[k][0])
