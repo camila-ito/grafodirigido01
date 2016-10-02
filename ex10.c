@@ -244,6 +244,8 @@ void help(void)
     printf("\nOptions:\n"); 
     printf("\t-h, --help\n\t\tShow this help.\n");
     printf("\t-f, --flag\n\t\tCall the arquivo.txt\n");
+    printf("\nQuit:\n\t Para sair basta digitar na entrada \"--\"\n"); 
+    printf("\nAuthor:\n by %s \n\n", "Grupo1"); 
     exit(EXIT_FAILURE);
 }
 
