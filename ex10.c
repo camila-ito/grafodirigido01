@@ -94,7 +94,7 @@ int main(int argc, char *argv[])
 
 int verifica(int i, char letra[][2], char reli, char relf)/*reli = relacao inicial// relf = relacao final*/
 {
-    int ;
+    int k, r = 0;
     char ;
 
     return 0;
