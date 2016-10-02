@@ -94,7 +94,7 @@ int main(int argc, char *argv[])
     while(1)
     {
         printf("\nAutomatos: %s\n", graf);
-        printf("Digite uma relacao entre os lugares existentes:\n");
+        printf("Digite uma relacao entre os lugares existentes:Ex:ab\n");
         scanf("%c%c", &rel[0], &rel[1]);
         __fpurge(stdin);
 
