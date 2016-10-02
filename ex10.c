@@ -108,9 +108,7 @@ int main(int argc, char *argv[])
 
         if(r)
         {
-            if(recur == 1)
-                printf("Caminho\n");
-            else
+            if(recur != 1)
                 printf("Circuito\n");
         }
         else
@@ -132,7 +130,7 @@ int verifica(int i, char letra[][2], char reli, char relf, int para[])/*reli = r
             {
                 if(letra[k][1] == relf)
                 {
-                    r = 1;
+                    printf("Caminho\n");
                     break;
                 }
             }
