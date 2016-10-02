@@ -124,8 +124,6 @@ int verifica(int i, char letra[][2], char reli, char relf, int para[])/*reli = r
             }
         }
     }
-    if(recur > 100)
-        r = 1;
 
     return r;
 }
