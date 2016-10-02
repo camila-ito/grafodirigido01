@@ -76,7 +76,12 @@ int main(int argc, char *argv[])
 
         r = verifica(i, letra, rel[0], rel[1], para);
 
-
+        if(r)
+        {
+            if(recuf == 1)
+                printf("Caminho\n");
+            else
+                printf("Circuito\n");
 
         /*verifica(int i, char letra[][2], char reli, char relf)*//*reli = relacao inicial// relf = relacao final*/
     }
