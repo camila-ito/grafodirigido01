@@ -101,7 +101,7 @@ int verifica(int i, char letra[][2], char reli, char relf)/*reli = relacao inici
     {
         if(reli == letra[k][0])
         {
-            for(j = 0; j < recurs; j++)
+            for(j = 0; j < recur; j++)
             {
                 if()
                     
