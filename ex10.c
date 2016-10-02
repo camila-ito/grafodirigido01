@@ -1,3 +1,5 @@
+#define MODULO(x) ((x)>=0 ? (x) : (-1*(x)))
+
 #include <stdio.h>
 #include <stdio_ext.h>
 #include <stdlib.h>
