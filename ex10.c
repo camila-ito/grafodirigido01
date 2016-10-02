@@ -23,6 +23,7 @@
  * ************************************************************************ *
  *    To contact the author, please write to:                               *
  *    Rafael Santos Pereira da Silva <rafappr99@gmail.com>                  *
+ *    Victor Cajuba  <victorcajuba@gmail.com>                               *
  *    Webpage: http://www.poli.br                                           *
  *    Phone: +55 (81) 99345-0341                                            *
  * ************************************************************************ *
