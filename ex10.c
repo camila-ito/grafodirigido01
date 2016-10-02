@@ -26,7 +26,7 @@ int verifica(int i, char letra[][2], char reli, char relf);/*reli = relacao inic
  */
 int main(int argc, char *argv[])
 {
-    int i, r, opt,
+    int i, r, opt, para[300],
         j; /*numero de automatos*/
     char letra[20][2], 
          graf[20], rel[2],
