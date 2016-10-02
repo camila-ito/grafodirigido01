@@ -82,6 +82,9 @@ int main(int argc, char *argv[])
                 printf("Caminho\n");
             else
                 printf("Circuito\n");
+        }
+        else
+            printf("Nao ha conexao\n");
 
         /*verifica(int i, char letra[][2], char reli, char relf)*//*reli = relacao inicial// relf = relacao final*/
     }
