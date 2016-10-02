@@ -88,7 +88,7 @@ int main(int argc, char *argv[])
     if(DEBUG)
         printf("grafos: %s, quant_graf: %d\n", graf, j);
 
-    printf("Digite \"--\" para parar o programa\n");
+    printf("\nDigite \"--\" para parar o programa\n");
 
     while(1)
     {
@@ -183,10 +183,15 @@ int entrada(char letra[][2], char url[])
     arquivo = fopen(url, "r");
 
     if(arquivo == NULL)
+    {
         printf("erro no carregamento do arquivo\n");
+        exit(EXIT_FAILURE);
+    }
 
     while(fscanf(arquivo, "%c %c\n", &letra[i][0], &letra[i][1]) != EOF) 
         i++;
+
+    printf("Relacoes existentes no arquivo\n");
 
     for(k=0; k < i; k++)
     {
