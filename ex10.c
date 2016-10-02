@@ -113,6 +113,11 @@ int verifica(int i, char letra[][2], char reli, char relf, int para[])/*reli = r
             }
             else
                 continue;
+            if(letra[k][1]==relf)
+            {
+                r
+            }
+                            
         
 
         }
