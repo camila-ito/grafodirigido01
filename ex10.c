@@ -210,6 +210,9 @@ void help(void)
 {
     printf("%s - %s\n", "ex10", "Analise de grafos");
     printf("\nUsage: %s [-h|-f]\n", "ex10"); 
+    printf("\nOptions:\n"); 
+    printf("\t-h, --help\n\t\tShow this help.\n");
+    printf("\t-f, --flag\n\t\tCall the arquivo.txt\n");
     exit(EXIT_FAILURE);
 }
 
