@@ -71,6 +71,15 @@ int main(int argc, char *argv[])
     return EXIT_SUCCESS;
 }
 
+/* --------------------------------------------------------------------------*/
+/**
+ * \brief 
+ *
+ * \param letra[][2]
+ * \param url[]
+ *
+ * \return 
+ */
 int entrada(char letra[][2], char url[])
 {
     int i = 0, k;
@@ -94,6 +103,16 @@ int entrada(char letra[][2], char url[])
     return i;
 }
 
+/* --------------------------------------------------------------------------*/
+/**
+ * \brief 
+ *
+ * \param letra[][2]
+ * \param graf
+ * \param i
+ *
+ * \return 
+ */
 int quant_graf(char letra[][2], char *graf, int i)
 {
     int k, m,
@@ -127,6 +146,10 @@ int quant_graf(char letra[][2], char *graf, int i)
 }
 
 
+/* --------------------------------------------------------------------------*/
+/**
+ * \brief 
+ */
 void help(void)
 {
     printf("%s - %s\n", "ex10", "Analise de grafos");
