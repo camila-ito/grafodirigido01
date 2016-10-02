@@ -92,7 +92,7 @@ int main(int argc, char *argv[])
     return EXIT_SUCCESS;
 }
 
-int verifica(int i, char letra[][2], char reli, char relf)/*reli = relacao inicial// relf = relacao final*/
+int verifica(int i, char letra[][2], char reli, char relf, int para[])/*reli = relacao inicial// relf = relacao final*/
 {
     int k, r = 0;
     char ;
