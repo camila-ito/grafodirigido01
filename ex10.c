@@ -111,6 +111,8 @@ int verifica(int i, char letra[][2], char reli, char relf)/*reli = relacao inici
                 para[recur] = k;
                 recur++;
             }
+            else
+                continue;
         
 
         }
